@@ -2,11 +2,38 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link>|
+      <router-link to="/Inicioview">Inicio</router-link> |
+     
+      <router-link to="/Create">Create</router-link> |
+       <router-link to="/Index">Create</router-link> |
+        <router-link to="/Update">Create</router-link> |
+         <router-link to="/Usuario">Usuario</router-link> |
+
+           <router-link to="/Rol">Rol</router-link> |
+            <router-link to="/Inicio">Inicio</router-link> |
+             <router-link to="/usurios">usuarios</router-link> |
+
+
+<sidebar></sidebar>
+
     </nav>
     <router-view/>
   </div>
 </template>
+
+<script>
+
+import sidebar from '../src/components/sidebar.vue'
+
+export default{
+  
+components:{
+sidebar
+}
+}
+
+</script>
 
 <style>
 #app {
